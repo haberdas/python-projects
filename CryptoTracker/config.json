@@ -1,0 +1,13 @@
+{
+  "coins": [
+    {"name": "BTC"},
+    {"name": "XMR"},
+    {"name": "ETH"}
+  ],
+  "exchanges":[
+    {"name":"poloniex","id":0},
+    {"name":"bittrex", "id":1},
+    {"name":"gdax", "id":2}
+  ],
+  "exchangeKeys":{}
+}

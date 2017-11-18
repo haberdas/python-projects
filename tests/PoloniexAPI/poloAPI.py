@@ -16,8 +16,9 @@ def getPoloCoins():
 	coinList = [x for x in res if "BTC_" in x]
 
 	#make a usable dictionary from Polo's shit
-	coinDict = [{"name":i,"percentChange":res[i]["percentChange"], "last":res[i]["last"], "low24hr":res[i]["low24hr"], "baseVolume":res[i]["baseVolume"]} for i in coinList]
-	coinDict.sort(key=operator.itemgetter('name'))
+    coinDict = [{"name":i,"percentChange":res[i]["percentChange"], "last":res[i]["last"],
+        "low24hr":res[i]["low24hr"], "baseVolume":res[i]["baseVolume"]} for i in coinList]
+    coinDict.sort(key=operator.itemgetter('name'))
 
 	return coinDict
 
